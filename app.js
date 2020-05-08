@@ -1,5 +1,5 @@
 const express = require('express')
-const jcongoDb = require('./config/jcongoDb');
+const connection = require('./config/jcongoDb');
 
 const app = express()
 
