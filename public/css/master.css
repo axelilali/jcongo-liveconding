@@ -42,15 +42,17 @@ h2 span {
   margin: 10px 10px;
 }
 
-.carte input[type="text"]{
-  width: 20px;
+.carte input[type="text"], #item input[type="text"]{
+  width: 30px;
   height: 25px;
+  text-align: center;
 }
 .carte p {
   font-size: 14px;
   line-height: 18px;
 }
-.control {
+.control, #item .control {
+  text-align: center;
   display: inline-block;
   width: 20px;
   border-radius: 50%;
@@ -73,6 +75,65 @@ button {
   max-width: 100%;
   margin-bottom: 10px;
 }
+
+#item {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 50% 40% 10%;
+}
+#item img {
+  max-width: 100%;
+}
+#item .col {margin: 0 20px;}
+
+#item ul li {
+  display: inline-block;
+  color: rgba(102,102,102,.7);
+}
+#item ul li:after {
+  padding: 0 5px;
+  content: '/'
+}
+#item ul li:last-child:after{content: ''}
+
+#item ul li a {
+  color: rgba(102,102,102,.7);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#item h3 {
+  color: #555;
+  font-size: 25px;
+  margin:10px 0;
+}
+.sous-bar {
+  display: inline-block;
+  width: 30px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+.para-qt {
+  color: #777;
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.desc {
+  color:rgb(119, 119, 119);
+  line-height: 25.6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#item h6 {
+  color: #7a9c59;
+  font-size:12.8px;
+  margin-bottom: 20px;
+}
+
+
+
 
 @media screen and (max-width:700px) {
   .items {

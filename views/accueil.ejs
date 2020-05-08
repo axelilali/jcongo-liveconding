@@ -6,17 +6,28 @@
 
     <div class="items">
 
+      <%  result.forEach((item, i) => {%>
+
+
       <div class="carte">
-        <a href="#"><img src="/img/Ananas.jpg" alt=""></a>
-        <p><b>Ananas</b></p>
-        <p>$3.00/ pièce</p>
-        <p>Quantité encore disponible: 4,0</p><br>
+        <a href=<%= `/items/${item.id}` %>><img src=<%= item.image %> alt=""></a>
+
+        <p><b><%= item.name %></b></p>
+
+        <p >$ <span class="qt" ><%= item.prixKilo %></span>/Kilo</p>
+        <p >$ <span class="qt"><%= item.prixBouquet %></span>/bouquet de 25 grammes</p>
+        <p >$ <span class="qt" ><%= item.prixBotte %></span>/botte de 500 grammes</p>
+
+        <p>Quantité encore disponible: <%= item.qteDispo%></p><br>
+
         <a class="control" href="#">+</a>
         <input type="text" name="" value="1">
         <a class="control" href="#">-</a>
 
         <button type="button" name="button">AJOUTER AU PANIER</button>
       </div>
+
+<%   });%>
 
     </div>
   </div>
