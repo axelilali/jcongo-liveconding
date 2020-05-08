@@ -1,10 +1,81 @@
 * {
+  /* a enlever */
   margin: 0;
+  /* a enlever */
   padding: 0;
+
   font-family: 'Gilroy', sans-serif;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+#produits {
+  padding: 50px;
+  background: #2b2e37;
+  text-align: center;
+  color: #fff;
+}
+h2{
+  border-bottom: 1px solid #f3eb32;
+  font-size: 25px;
+  line-height: 0.01em;
+}
+h2 span {
+  background: #f3eb32;
+  padding: 10px 20px;
+  color: #1f232c;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 50px;
+  color:#1f232c;
+}
+
+.carte {
+  background: #fff;
+  /* padding: 20px; */
+  margin: 10px 10px;
+}
+
+.carte input[type="text"]{
+  width: 20px;
+  height: 25px;
+}
+.carte p {
+  font-size: 14px;
+  line-height: 18px;
+}
+.control {
+  display: inline-block;
+  width: 20px;
+  border-radius: 50%;
+  background: #f3eb32;
+  text-decoration: none;
+  padding: 3px;
+  margin: 0 5px;
+}
+
+button {
+  border:none;
+  background:#f3eb32;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-weight:500;
+}
+
+.carte img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:700px) {
+  .items {
+    grid-template-columns: 50% 50%;
+  }
 }
