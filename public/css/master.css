@@ -90,11 +90,11 @@ button {
   display: inline-block;
   color: rgba(102,102,102,.7);
 }
-#item ul li:after {
+#item .petit-menu li:after {
   padding: 0 5px;
   content: '/'
 }
-#item ul li:last-child:after{content: ''}
+#item .petit-menu li:last-child:after{content: ''}
 
 #item ul li a {
   color: rgba(102,102,102,.7);
@@ -131,10 +131,38 @@ button {
   font-size:12.8px;
   margin-bottom: 20px;
 }
+.line {
+  display: block;
+  border-bottom: 1px dotted #ddd;
+  margin-top: 50px;
+}
+.souspara {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #777;
+  line-height: 20px;
+}
+.btn-social {
+  font-size: 11px;
+  color: #fff;
+  padding: 3px 5px;
+  margin: 0px 3px 5px;
+  border-radius: 3px;
+}
+.fb {background: #4c69ba;}
+.lk {background: #1177b5;}
+.tw {background: #1c95e0;}
 
-
-
-
+.nav {
+  font-size: 25px;
+  color: #c0c0c0
+}
+.social-icons {
+  margin: 20px 0;
+}
+.social-icons .iconify {
+  font-size: 30px;
+}
 @media screen and (max-width:700px) {
   .items {
     grid-template-columns: 50% 50%;
